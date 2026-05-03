@@ -1,0 +1,163 @@
+{
+  "dataset": {
+    "total_images": 400,
+    "class_counts": {
+      "car": 100,
+      "bus": 100,
+      "truck": 100,
+      "motorcycle": 100
+    }
+  },
+  "classifier": {
+    "train_samples": 320,
+    "test_samples": 80,
+    "epochs": 10,
+    "batch_size": 16,
+    "learning_rate": 0.0001,
+    "test_metrics": {
+      "loss": 0.2197121771518141,
+      "accuracy": 0.925,
+      "total": 80,
+      "per_class_accuracy": {
+        "car": 0.95,
+        "bus": 0.9,
+        "truck": 0.85,
+        "motorcycle": 1.0
+      },
+      "confusion_matrix": [
+        [
+          19,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          18,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          17,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          20
+        ]
+      ]
+    }
+  },
+  "pipeline_results": [
+    {
+      "image_path": "C:\\Users\\AAKARSH JOSHI\\OneDrive\\Desktop\\project_student_name\\project_Aakarsh_Joshi\\data\\Car\\Image_1.jpg",
+      "detections": 2,
+      "vehicles": [
+        {
+          "crop_index": 0,
+          "det_label": "car",
+          "det_score": 0.8636,
+          "box": [
+            31,
+            213,
+            1181,
+            680
+          ],
+          "pred_label": "car",
+          "pred_confidence": 0.9994
+        },
+        {
+          "crop_index": 1,
+          "det_label": "motorcycle",
+          "det_score": 0.5971,
+          "box": [
+            275,
+            211,
+            1189,
+            645
+          ],
+          "pred_label": "car",
+          "pred_confidence": 0.9996
+        }
+      ],
+      "annotated_image": "C:\\Users\\AAKARSH JOSHI\\OneDrive\\Desktop\\project_student_name\\project_Aakarsh_Joshi\\results\\segmentation_outputs\\Car_Image_1_segmented.jpg",
+      "crop_paths": [
+        "C:\\Users\\AAKARSH JOSHI\\OneDrive\\Desktop\\project_student_name\\project_Aakarsh_Joshi\\results\\segmentation_outputs\\Car_Image_1_crop_0.jpg",
+        "C:\\Users\\AAKARSH JOSHI\\OneDrive\\Desktop\\project_student_name\\project_Aakarsh_Joshi\\results\\segmentation_outputs\\Car_Image_1_crop_1.jpg"
+      ]
+    },
+    {
+      "image_path": "C:\\Users\\AAKARSH JOSHI\\OneDrive\\Desktop\\project_student_name\\project_Aakarsh_Joshi\\data\\Bus\\Image_1.jpg",
+      "detections": 1,
+      "vehicles": [
+        {
+          "crop_index": 0,
+          "det_label": "bus",
+          "det_score": 0.9968,
+          "box": [
+            211,
+            127,
+            1427,
+            982
+          ],
+          "pred_label": "bus",
+          "pred_confidence": 0.9989
+        }
+      ],
+      "annotated_image": "C:\\Users\\AAKARSH JOSHI\\OneDrive\\Desktop\\project_student_name\\project_Aakarsh_Joshi\\results\\segmentation_outputs\\Bus_Image_1_segmented.jpg",
+      "crop_paths": [
+        "C:\\Users\\AAKARSH JOSHI\\OneDrive\\Desktop\\project_student_name\\project_Aakarsh_Joshi\\results\\segmentation_outputs\\Bus_Image_1_crop_0.jpg"
+      ]
+    },
+    {
+      "image_path": "C:\\Users\\AAKARSH JOSHI\\OneDrive\\Desktop\\project_student_name\\project_Aakarsh_Joshi\\data\\Truck\\Image_1.jpg",
+      "detections": 1,
+      "vehicles": [
+        {
+          "crop_index": 0,
+          "det_label": "truck",
+          "det_score": 0.9472,
+          "box": [
+            372,
+            187,
+            3947,
+            2530
+          ],
+          "pred_label": "truck",
+          "pred_confidence": 0.9999
+        }
+      ],
+      "annotated_image": "C:\\Users\\AAKARSH JOSHI\\OneDrive\\Desktop\\project_student_name\\project_Aakarsh_Joshi\\results\\segmentation_outputs\\Truck_Image_1_segmented.jpg",
+      "crop_paths": [
+        "C:\\Users\\AAKARSH JOSHI\\OneDrive\\Desktop\\project_student_name\\project_Aakarsh_Joshi\\results\\segmentation_outputs\\Truck_Image_1_crop_0.jpg"
+      ]
+    },
+    {
+      "image_path": "C:\\Users\\AAKARSH JOSHI\\OneDrive\\Desktop\\project_student_name\\project_Aakarsh_Joshi\\data\\motorcycle\\Image_1.jpeg",
+      "detections": 1,
+      "vehicles": [
+        {
+          "crop_index": 0,
+          "det_label": "motorcycle",
+          "det_score": 0.9983,
+          "box": [
+            798,
+            663,
+            3590,
+            2498
+          ],
+          "pred_label": "motorcycle",
+          "pred_confidence": 0.9989
+        }
+      ],
+      "annotated_image": "C:\\Users\\AAKARSH JOSHI\\OneDrive\\Desktop\\project_student_name\\project_Aakarsh_Joshi\\results\\segmentation_outputs\\motorcycle_Image_1_segmented.jpg",
+      "crop_paths": [
+        "C:\\Users\\AAKARSH JOSHI\\OneDrive\\Desktop\\project_student_name\\project_Aakarsh_Joshi\\results\\segmentation_outputs\\motorcycle_Image_1_crop_0.jpg"
+      ]
+    }
+  ]
+}
